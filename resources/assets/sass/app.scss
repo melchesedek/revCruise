@@ -1,0 +1,26 @@
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "partials/cruise";
+
+body{
+    background-color: #d6d6d6;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+  
+.main {
+  margin-top: 4%;
+}
+
+.content {
+    text-align: center;
+    display: inline-block;
+}
+
+.title {
+    font-size: 96px;
+}
