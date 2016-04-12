@@ -26,19 +26,14 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-        <div class="container">
+        <div class="container cruiseWrap ">
             <div class="row">
                 <h1>Choose Your Sailings<small>(Pick one for each box)</small></h1>
-                <ul class="main"></ul>
-               <script type="text/template" id="cruiseLines">
-                    <div class="row">
-                	    <h1>Choose Your Sailings<small>(Pick one for each box)</small></h1>
-                		<div class="total col-sm-12  col-md-12  col-lg-12" id="cruiseFrame">
-                		    <hr></hr>
-                		    <h2>Your Selected Sailings Total <span>999999</span> </h2>
-                	    </div>
-                    </div>
-                </script>
+                <ul class="salingsWrap no-gutter">
+               
+                   @yield('content')
+              
+               </ul>
                 <div class="total total col-sm-12  col-md-12  col-lg-12">
                     <hr>
                     <h2>Your Selected Sailings Total</h2>        

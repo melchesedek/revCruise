@@ -1,7 +1,7 @@
 @extends('cruiseOptions')
 
 @section('content')
-<div class=" cruise-section col-sm-4">
+<li class="cruise-section no-gutter">
   <article>
       <img src="https://i.imgur.com/xCLiMOj.jpg" alt="First Cruis">
       <div class="pricing"><p>Starting at</p>$198</div>
@@ -28,7 +28,7 @@
             </label>
         </div>
     </footer>
-</div>
+</li>
 
 
 @stop

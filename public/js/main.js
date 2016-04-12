@@ -65,34 +65,3 @@ sailingOptions.fetch();
 console.log(cruiseLines.toJSON());  
 console.log(sailings.toJSON());
 console.log(sailingOptions.toJSON());
-
-
-var CruiseLineView = Backbone.View.extend({
-    tagName: 'li',
-    template: _.template( $('#cruiseLines').html() ),
-    render: function () {
-        this.$el.html(this.template(this.model.toJSON())); // <<---- this is just jquery
-    }
-    
-});
-
-var SailingOptionsView = Backbone.View.extend({ // the table
-// key here is the render method needs to do a each() on models so that it loops through all it's models. 
-    tagName: 'ul',
-    render: function () {
-        this.collection.each(function(cruiseLineModel) { 
-            var rowView = new CruiseLineView({ model: cruiseLineModel}); 
-            // what if the row model had keys that pointed to other models? you'd need to use them to build that up here. i see
-            this.$el.append(rowView.el);
-        }, this);
-    }
-
-});
-
-
-var cruiseLineView = new CruiseLineView({collection:new CruiseLinesCollection(),model : cruiseLine});
-
-var salingOptionView = new SailingOptionsView({collection: sailings,model:new SailingModel()});
-
-
-cruiseLineView.render();

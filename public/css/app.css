@@ -5749,6 +5749,86 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.cruiseWrap {
+  margin-top: 4%; }
+  .cruiseWrap .row h1 {
+    font-size: 36px;
+    font-family: "Lato";
+    font-weight: 600;
+    line-height: 1.2em;
+    margin: 0; }
+    .cruiseWrap .row h1 small {
+      font-size: 16px;
+      font-weight: 600;
+      color: #3c3c3c;
+      font-style: italic;
+      margin-left: 16px; }
+  .cruiseWrap .row ul.salingsWrap {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 2%;
+    list-style: none;
+    max-width: 950px;
+    padding: 0;
+    margin: 32px 0 0 0; }
+    @media (min-width: 768px) {
+      .cruiseWrap .row ul.salingsWrap {
+        float: left;
+        width: 100%; } }
+    @media (min-width: 992px) {
+      .cruiseWrap .row ul.salingsWrap {
+        float: left;
+        width: 100%; } }
+    .cruiseWrap .row ul.salingsWrap li {
+      position: relative;
+      float: left;
+      width: 100%;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding: 0;
+      margin: 0 0 0 0; }
+      @media (min-width: 768px) {
+        .cruiseWrap .row ul.salingsWrap li {
+          float: left;
+          width: 100%; } }
+      @media (min-width: 992px) {
+        .cruiseWrap .row ul.salingsWrap li {
+          float: left;
+          width: 33.3333333333%; } }
+      @media (min-width: 1025px) and (max-width: 1800px) {
+        .cruiseWrap .row ul.salingsWrap li {
+          max-width: 311px; } }
+
+/**
+* Global Variable 
+*/
+/**
+* Global Mixins 
+*/
+/**
+* Global Styles 
+*/
 body {
   background-color: #d6d6d6;
   height: 100%;
@@ -5757,8 +5837,8 @@ body {
   width: 100%;
   font-family: 'Lato', sans-serif; }
 
-.main {
-  margin-top: 4%; }
+nav .container {
+  padding-left: 0; }
 
 .content {
   text-align: center;
