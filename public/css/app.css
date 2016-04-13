@@ -5760,7 +5760,7 @@ button.close {
   border-color: #bb7100 transparent transparent transparent; }
 
 .row .cruiseWrap {
-  margin-top: 4%;
+  margin: 4% auto;
   max-width: 940px;
   padding: 0; }
   .row .cruiseWrap h1 {
@@ -5768,7 +5768,7 @@ button.close {
     font-family: "Lato";
     font-weight: 600;
     line-height: 1.2em;
-    margin: 0; }
+    margin: 2% 0 0; }
     .row .cruiseWrap h1 small {
       font-size: 16px;
       font-weight: 600;
@@ -5818,6 +5818,10 @@ button.close {
       min-height: 1px;
       padding-left: 15px;
       padding-right: 15px;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
       padding: 0;
       margin: 0 5px 0 0; }
       @media (min-width: 768px) {
@@ -5828,14 +5832,15 @@ button.close {
         .row .cruiseWrap ul.salingsWrap li.cruise-section {
           float: left;
           width: 33.3333333333%; } }
+      @media (min-width: 1200px) {
+        .row .cruiseWrap ul.salingsWrap li.cruise-section {
+          float: left;
+          width: 33.3333333333%; } }
+      @media (min-width: 1200px) {
+        .row .cruiseWrap ul.salingsWrap li.cruise-section {
+          max-width: 310px; } }
       .row .cruiseWrap ul.salingsWrap li.cruise-section:last-of-type {
         margin-right: 0; }
-      @media (min-width: 1025px) and (max-width: 3840px) {
-        .row .cruiseWrap ul.salingsWrap li.cruise-section {
-          max-width: 310px; } }
-      @media (min-width: 320px) and (max-width: 961px) {
-        .row .cruiseWrap ul.salingsWrap li.cruise-section {
-          max-width: 310px; } }
       .row .cruiseWrap ul.salingsWrap li.cruise-section .startingPrice {
         height: 73px;
         width: 120px;
@@ -5843,11 +5848,12 @@ button.close {
         padding: 6px 9px 12px 9px;
         float: none;
         position: absolute;
-        right: 0;
-        top: 34px; }
-        @media (min-width: 600px) and (max-width: 1025px) {
+        right: 0px;
+        top: 34px;
+        z-index: 1; }
+        @media (min-width: 992px) and (max-width: 1199px) {
           .row .cruiseWrap ul.salingsWrap li.cruise-section .startingPrice {
-            z-index: 2;
+            z-index: 1;
             top: 16px;
             right: -11px; } }
         .row .cruiseWrap ul.salingsWrap li.cruise-section .startingPrice .description {
@@ -5871,23 +5877,65 @@ button.close {
           right: 1px;
           bottom: -14px; }
       .row .cruiseWrap ul.salingsWrap li.cruise-section article {
+        position: relative;
+        float: left;
+        width: 100%;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
         background-color: #ffffff;
         float: left;
         width: 100%;
         margin-bottom: 20px; }
-        @media (min-width: 1025px) and (max-width: 3840px) {
+        @media (min-width: 768px) {
           .row .cruiseWrap ul.salingsWrap li.cruise-section article {
-            max-width: 300px; } }
-        @media (min-width: 320px) and (max-width: 961px), (min-width: 600px) and (max-width: 1025px) {
+            float: left;
+            width: 100%; } }
+        @media (min-width: 992px) {
+          .row .cruiseWrap ul.salingsWrap li.cruise-section article {
+            float: left;
+            width: 100%; } }
+        @media (min-width: 1200px) {
+          .row .cruiseWrap ul.salingsWrap li.cruise-section article {
+            float: left;
+            width: 100%; } }
+        @media (max-width: 767px) {
           .row .cruiseWrap ul.salingsWrap li.cruise-section article {
             max-width: 300px;
-            margin-bottom: 20px; } }
-        @media (min-width: 600px) and (max-width: 1025px) {
+            margin-bottom: 20px;
+            float: left; } }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .row .cruiseWrap ul.salingsWrap li.cruise-section article {
+            margin-bottom: 20px;
+            float: left;
+            padding: 0; } }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          .row .cruiseWrap ul.salingsWrap li.cruise-section article {
+            margin-bottom: 20px;
+            float: left;
+            width: 100%; } }
+        @media (min-width: 1200px) {
+          .row .cruiseWrap ul.salingsWrap li.cruise-section article {
+            max-width: 300px;
+            padding: 0; } }
+        @media (min-width: 992px) and (max-width: 1199px) {
           .row .cruiseWrap ul.salingsWrap li.cruise-section article img {
             max-width: 40%;
             max-height: 230px;
             float: left; } }
-        .row .cruiseWrap ul.salingsWrap li.cruise-section article footer {
+        .row .cruiseWrap ul.salingsWrap li.cruise-section article footer.cruiseFooter {
           position: relative;
           float: left;
           width: 100%;
@@ -5908,38 +5956,36 @@ button.close {
           padding-right: 15px;
           padding: 10px 23px 20px 12px; }
           @media (min-width: 768px) {
-            .row .cruiseWrap ul.salingsWrap li.cruise-section article footer {
+            .row .cruiseWrap ul.salingsWrap li.cruise-section article footer.cruiseFooter {
               float: left;
               width: 100%; } }
           @media (min-width: 992px) {
-            .row .cruiseWrap ul.salingsWrap li.cruise-section article footer {
+            .row .cruiseWrap ul.salingsWrap li.cruise-section article footer.cruiseFooter {
               float: left;
               width: 66.6666666667%; } }
-          @media (min-width: 768px) {
-            .row .cruiseWrap ul.salingsWrap li.cruise-section article footer {
+          @media (min-width: 1200px) {
+            .row .cruiseWrap ul.salingsWrap li.cruise-section article footer.cruiseFooter {
               float: left;
               width: 100%; } }
-          @media (min-width: 600px) and (max-width: 1025px) {
-            .row .cruiseWrap ul.salingsWrap li.cruise-section article footer {
-              max-width: 67%;
-              min-height: 230px;
-              background-color: #ffffff; } }
-          .row .cruiseWrap ul.salingsWrap li.cruise-section article footer p {
+          @media (min-width: 992px) and (max-width: 1199px) {
+            .row .cruiseWrap ul.salingsWrap li.cruise-section article footer.cruiseFooter {
+              width: 60%; } }
+          .row .cruiseWrap ul.salingsWrap li.cruise-section article footer.cruiseFooter p {
             font-size: 0.75em;
             margin: 0 0 10px 0; }
-            @media (min-width: 600px) and (max-width: 1025px) {
-              .row .cruiseWrap ul.salingsWrap li.cruise-section article footer p {
+            @media (min-width: 992px) and (max-width: 1199px) {
+              .row .cruiseWrap ul.salingsWrap li.cruise-section article footer.cruiseFooter p {
                 margin-top: 30px; } }
-          .row .cruiseWrap ul.salingsWrap li.cruise-section article footer h3 {
+          .row .cruiseWrap ul.salingsWrap li.cruise-section article footer.cruiseFooter h3 {
             margin: 0 0 16px 0;
             font-weight: 600;
             font-size: 1.75em;
             line-height: 30px; }
-          .row .cruiseWrap ul.salingsWrap li.cruise-section article footer .radio {
+          .row .cruiseWrap ul.salingsWrap li.cruise-section article footer.cruiseFooter .radio {
             margin: 0 0 4px; }
-            .row .cruiseWrap ul.salingsWrap li.cruise-section article footer .radio label .title {
+            .row .cruiseWrap ul.salingsWrap li.cruise-section article footer.cruiseFooter .radio label .title {
               line-height: 20px; }
-            .row .cruiseWrap ul.salingsWrap li.cruise-section article footer .radio .price {
+            .row .cruiseWrap ul.salingsWrap li.cruise-section article footer.cruiseFooter .radio .price {
               float: right;
               font-weight: 600;
               color: #ff9900; }
@@ -5987,6 +6033,18 @@ button.close {
         line-height: .75em;
         font-weight: 700;
         text-align: right; }
+        .row .cruiseWrap .total h2 span i {
+          font-style: normal; }
+
+@media (min-width: 1200px) {
+  .cruiseFooter {
+    width: 100%; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .cruiseFooter {
+    padding: 10px 23px 20px 12px;
+    width: 60%;
+    float: left; } }
 
 /**
 * Global Variable 

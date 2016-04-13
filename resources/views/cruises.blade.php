@@ -8,9 +8,9 @@
       <span class="topleft"></span>
     </div>
   <article>
-      
+      <div class="pull-left">
           <img src="https://i.imgur.com/xCLiMOj.jpg" alt="First Cruise">
-     
+      </div>
       <footer>
             <p>Cruise Line Name - Cruise Ship Name</p>
             <h3>Cruise Sailing Title</h3>
@@ -45,7 +45,9 @@
       <span class="topleft"></span>
     </div>
   <article>
-      <img src="https://i.imgur.com/xCLiMOj.jpg" alt="First Cruise">
+      <div class="pull-left">
+          <img src="https://i.imgur.com/xCLiMOj.jpg" alt="First Cruise">
+      </div>
       <footer>
             <p>Cruise Line Name - Cruise Ship Name</p>
             <h3>Cruise Sailing Title</h3>
@@ -80,7 +82,9 @@
       <span class="topleft"></span>
     </div>
   <article>
-      <img src="https://i.imgur.com/xCLiMOj.jpg" alt="First Cruise">
+      <div class="pull-left">
+          <img src="https://i.imgur.com/xCLiMOj.jpg" alt="First Cruise">
+      </div>
       <footer>
             <p>Cruise Line Name - Cruise Ship Name</p>
             <h3>Cruise Sailing Title</h3>
@@ -108,6 +112,7 @@
         </footer>
     </article>
 </li>
+
 
 @stop
 @section('scripts.footer')

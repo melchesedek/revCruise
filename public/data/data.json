@@ -16,17 +16,17 @@
 		"sailing_id": 60,
 		"sailing_name": "Bahamas Cruise",
 		"sailing_cruise_line_id": 5,
-		"sailing_main_image": "http://i.imgur.com/xCLiMOj.jpg"
+		"sailing_main_image": "https://i.imgur.com/xCLiMOj.jpg"
 	}, {
 		"sailing_id": 65,
 		"sailing_name": "Jamaica Cruise",
 		"sailing_cruise_line_id": 8,
-		"sailing_main_image": "http://i.imgur.com/4V0D6IK.jpg"
+		"sailing_main_image": "https://i.imgur.com/4V0D6IK.jpg"
 	}, {
 		"sailing_id": 70,
 		"sailing_name": "Mexico Cruise",
 		"sailing_cruise_line_id": 1,
-		"sailing_main_image": "http://i.imgur.com/a82YKej.jpg"
+		"sailing_main_image": "https://i.imgur.com/a82YKej.jpg"
 	}],
 	"sailing_options": [{
 		"sailing_option_sailing_id": 60,
