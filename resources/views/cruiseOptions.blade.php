@@ -26,26 +26,25 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-        <div class="container cruiseWrap ">
-            <div class="row">
+        <div class="row">
+        <div class="container cruiseWrap">
                 <h1>Choose Your Sailings<small>(Pick one for each box)</small></h1>
-                <ul class="salingsWrap no-gutter">
+                <ul class="salingsWrap">
                
                    @yield('content')
               
                </ul>
-                <div class="total total col-sm-12  col-md-12  col-lg-12">
-                    <hr>
-                    <h2>Your Selected Sailings Total</h2>        
+                <hr>
+                <div class="total">
+                    <h2>Your Selected Sailings Total <span>$1,000</span> </h2>        
                 </div>
             </div>
         </div>
-        
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.3/backbone-min.js"></script>
         <script type="text/javascript" src="/js/main.js"></script>
-        
         @yield('scripts.footer');
     
     </body>

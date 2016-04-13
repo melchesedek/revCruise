@@ -1,12 +1,36 @@
-.cruiseWrap {
-    margin-top: 4%;
-    .row {
+$square: 10px;
+$color: #bb7100;
+
+@mixin triangle($direction, $sizeH, $sizeV, $color){
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    -moz-transform: scale(.9999);
+    @if $direction == topleft{
+    border-width: $sizeH $sizeV 0 0;
+    border-color: $color transparent transparent transparent;
+  }
+}
+
+.topleft{
+  @include triangle(topleft,$square,$square,$color);
+}
+
+.row{
+    .cruiseWrap{
+            margin-top: 4%;
+            max-width: 940px;
+            padding: 0;
+        
         h1{
             font-size: 36px;
             font-family: "Lato";
             font-weight: 600;
             line-height: 1.2em;
             margin: 0;
+            
             small{
                 font-size: 16px;
                 font-weight: 600;
@@ -15,27 +39,175 @@
                 margin-left: 16px;
             }
         }
-        ul.salingsWrap {
+        ul.salingsWrap{
              @include make-xs-column(12);
              @include make-sm-column(12);
              @include make-md-column(12);
              margin-top: 2%;
              list-style: none;
-             max-width: 950px;
+             max-width: 940px;
              padding: 0;
              margin: 32px 0 0 0;
-             li{
+             
+             li.cruise-section{
                  @include make-xs-column(12);
                  @include make-sm-column(12);
                  @include make-md-column(4);
                  padding: 0;
-                 margin: 0 0 0 0;
-                
-            @media  (min-width:1025px) and (max-width:1800px) {
-                max-width: 311px;
-            }
+                 margin: 0 5px 0 0;
+                 &:last-of-type{margin-right: 0;}
+                @media  (min-width:1025px) and (max-width:3840px) {
+                    max-width: 310px;
+                }
+                @media  (min-width:320px) and (max-width:961px) {
+                    max-width: 310px;
+                }
+                 
+             .startingPrice{
+                    height: 73px;
+                    width: 120px;
+                    background-color: #ff9900;
+                    padding: 6px 9px 12px 9px;
+                    float: none;
+                    position: absolute;
+                    right: 0;
+                    top: 34px;
+                     @media  (min-width:600px) and (max-width:1025px) {
+                         z-index: 2;
+                         top: 16px;
+                         right: -11px;
+                         
+                     }
+                 
+                 .description{
+                     font-size: 0.75em;
+                     font-weight: 400;
+                     width: 100%;
+                     text-align: left;
+                     margin-bottom: 0;
+                     line-height: 12px;
+                 }
+                 
+                 .price{
+                    font-size: 40px;
+                    font-weight: 800;
+                    text-align: right;
+                    width: 100%;
+                    margin-bottom: 0;
+                    line-height: 48px;
+                 }
+                 
+                 span.topleft {
+                  display: inline-block;
+                  margin: 4px auto;
+                  position: absolute;
+                  right: 1px;
+                  bottom: -14px;
+                 }
+             }
+             
+             article{
+                 background-color: #ffffff;
+                 float: left;
+                 width: 100%;
+                 margin-bottom: 20px;
+                 @media  (min-width:1025px) and (max-width:3840px) {
+                 max-width: 300px;
+                 }
+                 @media  (min-width:320px) and (max-width:961px),  
+                 (min-width:600px) and (max-width:1025px)  {
+                 max-width: 300px;
+                 margin-bottom: 20px;
+                 }
+                 
+                 img{
+                     @media  (min-width:600px) and (max-width:1025px) {
+                   max-width: 40%; 
+                   max-height: 230px;
+                   float: left;
+                     }
+                 }
+                 
+                 footer{
+                     @include make-xs-column(12);
+                     @include make-sm-column(12);
+                     @include make-md-column(8);
+                     @include make-sm-column(12);
+                     padding: 10px 23px 20px 12px;
+                     @media  (min-width:600px) and (max-width:1025px) {
+                        max-width: 67%;
+                        min-height: 230px;
+                        background-color: #ffffff;
+                        
+                     }
+                     p{
+                         font-size:0.75em;
+                         margin: 0 0 10px 0;
+                         @media  (min-width:600px) and (max-width:1025px) {
+                               margin-top: 30px;
+                       
+                         }
+                     }
+                     
+                     h3{
+                         margin:0 0 16px 0;
+                         font-weight: 600;
+                         font-size: 1.75em;
+                         line-height: 30px;
+                     }
+                     
+                     .radio{
+                         margin: 0 0 4px;
+                         
+                         label{
+                            .title{
+                                line-height: 20px;
+                            }
+                         }
+                         .price{
+                             float: right;
+                             font-weight: 600;
+                             color: #ff9900;
+                         }
+                     }
+                 }
                  
              }
         }
     }
+    
+    hr{
+        float: left;
+        position: relative;
+        width: 100%;
+        border-top: 3px solid #ababab;
+            margin: 30px 0 4px;
+    }
+    
+    .total{
+         @include make-xs-column(12);
+         @include make-sm-column(12);
+         @include make-md-column(12);
+         margin: 0;
+         padding: 0 0 0 14px;
+        h2{
+            font-size: 1.75em;
+            font-weight: 700;
+            span{
+                float: right;
+                height: 40px;
+                width: 120px;
+                background-color: #ff9900;
+                padding: 9px 9px 12px 9px;
+                font-size: 1.02em;
+                line-height: .75em;
+                font-weight: 700;
+                text-align: right;
+            }
+        }
+    }
 }
+}
+
+
+
