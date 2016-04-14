@@ -45,6 +45,11 @@ body{
 nav{
     .container{
         padding-left: 0;
+        .navbar-brand{
+        @media (max-width: 767px) {
+          margin-left:4%;
+        }
+        }
     }
 }
 

@@ -5759,10 +5759,18 @@ button.close {
   border-width: 10px 10px 0 0;
   border-color: #bb7100 transparent transparent transparent; }
 
+@media (max-width: 767px) {
+  .row {
+    max-width: 340px;
+    margin: 2% auto 0; } }
+
 .row .cruiseWrap {
   margin: 4% auto;
   max-width: 940px;
   padding: 0; }
+  @media (max-width: 767px) {
+    .row .cruiseWrap {
+      margin-top: 12%; } }
   .row .cruiseWrap h1 {
     font-size: 36px;
     font-family: "Lato";
@@ -5775,6 +5783,9 @@ button.close {
       color: #3c3c3c;
       font-style: italic;
       margin-left: 16px; }
+      @media (max-width: 767px) {
+        .row .cruiseWrap h1 small {
+          float: left; } }
   .row .cruiseWrap ul.salingsWrap {
     position: relative;
     float: left;
@@ -5839,6 +5850,12 @@ button.close {
       @media (min-width: 1200px) {
         .row .cruiseWrap ul.salingsWrap li.cruise-section {
           max-width: 310px; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .row .cruiseWrap ul.salingsWrap li.cruise-section {
+          min-width: 770px; } }
+      @media (max-width: 767px) {
+        .row .cruiseWrap ul.salingsWrap li.cruise-section {
+          max-width: 310px; } }
       .row .cruiseWrap ul.salingsWrap li.cruise-section:last-of-type {
         margin-right: 0; }
       .row .cruiseWrap ul.salingsWrap li.cruise-section .startingPrice {
@@ -5851,7 +5868,7 @@ button.close {
         right: 0px;
         top: 34px;
         z-index: 1; }
-        @media (min-width: 992px) and (max-width: 1199px) {
+        @media (min-width: 768px) and (max-width: 991px) {
           .row .cruiseWrap ul.salingsWrap li.cruise-section .startingPrice {
             z-index: 1;
             top: 16px;
@@ -5915,7 +5932,8 @@ button.close {
           .row .cruiseWrap ul.salingsWrap li.cruise-section article {
             max-width: 300px;
             margin-bottom: 20px;
-            float: left; } }
+            float: left;
+            padding-left: 0; } }
         @media (min-width: 768px) and (max-width: 991px) {
           .row .cruiseWrap ul.salingsWrap li.cruise-section article {
             margin-bottom: 20px;
@@ -5930,46 +5948,19 @@ button.close {
           .row .cruiseWrap ul.salingsWrap li.cruise-section article {
             max-width: 300px;
             padding: 0; } }
-        @media (min-width: 992px) and (max-width: 1199px) {
+        @media (min-width: 768px) and (max-width: 991px) {
           .row .cruiseWrap ul.salingsWrap li.cruise-section article img {
             max-width: 40%;
             max-height: 230px;
             float: left; } }
         .row .cruiseWrap ul.salingsWrap li.cruise-section article footer.cruiseFooter {
-          position: relative;
-          float: left;
-          width: 100%;
-          min-height: 1px;
-          padding-left: 15px;
-          padding-right: 15px;
-          position: relative;
-          min-height: 1px;
-          padding-left: 15px;
-          padding-right: 15px;
-          position: relative;
-          min-height: 1px;
-          padding-left: 15px;
-          padding-right: 15px;
-          position: relative;
-          min-height: 1px;
-          padding-left: 15px;
-          padding-right: 15px;
           padding: 10px 23px 20px 12px; }
-          @media (min-width: 768px) {
+          @media (min-width: 768px) and (max-width: 991px) {
             .row .cruiseWrap ul.salingsWrap li.cruise-section article footer.cruiseFooter {
+              width: 48%;
               float: left;
-              width: 100%; } }
-          @media (min-width: 992px) {
-            .row .cruiseWrap ul.salingsWrap li.cruise-section article footer.cruiseFooter {
-              float: left;
-              width: 66.6666666667%; } }
-          @media (min-width: 1200px) {
-            .row .cruiseWrap ul.salingsWrap li.cruise-section article footer.cruiseFooter {
-              float: left;
-              width: 100%; } }
-          @media (min-width: 992px) and (max-width: 1199px) {
-            .row .cruiseWrap ul.salingsWrap li.cruise-section article footer.cruiseFooter {
-              width: 60%; } }
+              margin-top: 26px;
+              margin-left: 20px; } }
           .row .cruiseWrap ul.salingsWrap li.cruise-section article footer.cruiseFooter p {
             font-size: 0.75em;
             margin: 0 0 10px 0; }
@@ -5995,6 +5986,13 @@ button.close {
     width: 100%;
     border-top: 3px solid #ababab;
     margin: 30px 0 4px; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .row .cruiseWrap hr {
+        margin-bottom: 0px;
+        min-width: 770px; } }
+    @media (max-width: 767px) {
+      .row .cruiseWrap hr {
+        margin-bottom: 0px; } }
   .row .cruiseWrap .total {
     position: relative;
     float: left;
@@ -6020,9 +6018,22 @@ button.close {
       .row .cruiseWrap .total {
         float: left;
         width: 100%; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .row .cruiseWrap .total {
+        background-color: #fff;
+        min-width: 770px; } }
+    @media (max-width: 767px) {
+      .row .cruiseWrap .total {
+        background-color: #fff;
+        padding-left: 6px; } }
     .row .cruiseWrap .total h2 {
       font-size: 1.75em;
       font-weight: 700; }
+      @media (max-width: 767px) {
+        .row .cruiseWrap .total h2 {
+          font-size: 1.02em;
+          margin: 2% 0;
+          line-height: 40px; } }
       .row .cruiseWrap .total h2 span {
         float: right;
         height: 40px;
@@ -6033,18 +6044,12 @@ button.close {
         line-height: .75em;
         font-weight: 700;
         text-align: right; }
+        @media (max-width: 767px) {
+          .row .cruiseWrap .total h2 span {
+            font-size: 1.5em;
+            line-height: 1.0em; } }
         .row .cruiseWrap .total h2 span i {
           font-style: normal; }
-
-@media (min-width: 1200px) {
-  .cruiseFooter {
-    width: 100%; } }
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .cruiseFooter {
-    padding: 10px 23px 20px 12px;
-    width: 60%;
-    float: left; } }
 
 /**
 * Global Variable 
@@ -6067,6 +6072,9 @@ body {
 
 nav .container {
   padding-left: 0; }
+  @media (max-width: 767px) {
+    nav .container .navbar-brand {
+      margin-left: 4%; } }
 
 .content {
   text-align: center;

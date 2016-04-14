@@ -19,10 +19,17 @@ $color: #bb7100;
 }
 
 .row {
+  @media (max-width: 767px) {
+            max-width: 340px;
+            margin: 2% auto 0;
+        }
   .cruiseWrap {
     margin: 4% auto;
     max-width: 940px;
     padding: 0;
+    @media (max-width: 767px) {
+         margin-top: 12%;
+        }
 
     h1 {
       font-size: 36px;
@@ -37,6 +44,9 @@ $color: #bb7100;
         color: #3c3c3c;
         font-style: italic;
         margin-left: 16px;
+        @media (max-width: 767px) {
+          float: left;
+        }
       }
     }
     ul.salingsWrap {
@@ -59,6 +69,12 @@ $color: #bb7100;
         @media(min-width: 1200px) {
           max-width: 310px;
         }
+        @media(min-width: 768px) and (max-width: 991px){
+          min-width: 770px;
+        }
+        @media (max-width: 767px) {
+          max-width: 310px;
+        }
         &:last-of-type {
           margin-right: 0;
         }
@@ -72,7 +88,7 @@ $color: #bb7100;
           right: 0px;
           top: 34px;
           z-index: 1;
-          @media (min-width: 992px) and (max-width: 1199px) {
+          @media(min-width: 768px) and (max-width: 991px) {
             z-index: 1;
             top: 16px;
             right: -11px;
@@ -118,6 +134,7 @@ $color: #bb7100;
             max-width: 300px;
             margin-bottom: 20px;
             float: left;
+            padding-left: 0;
           }
           @media(min-width: 768px) and (max-width: 991px) {
             margin-bottom: 20px;
@@ -134,7 +151,7 @@ $color: #bb7100;
             padding: 0;
           }
           img {
-            @media(min-width: 992px) and (max-width: 1199px) {
+            @media(min-width: 768px) and (max-width: 991px) {
               max-width: 40%;
               max-height: 230px;
               float: left;
@@ -142,13 +159,12 @@ $color: #bb7100;
           }
 
           footer.cruiseFooter {
-              @include make-xs-column(12);
-          @include make-sm-column(12);
-          @include make-md-column(8);
-          @include make-lg-column(12);
             padding: 10px 23px 20px 12px;
-            @media(min-width: 992px) and (max-width: 1199px) {
-                width: 60%;
+            @media(min-width: 768px) and (max-width: 991px) {
+                width: 48%;
+                float: left;
+                margin-top: 26px;
+                margin-left: 20px;
               }
             p {
               font-size: 0.75em;
@@ -191,6 +207,13 @@ $color: #bb7100;
       width: 100%;
       border-top: 3px solid #ababab;
       margin: 30px 0 4px;
+      @media(min-width: 768px) and (max-width: 991px){
+          margin-bottom: 0px;
+          min-width: 770px;
+        }
+        @media (max-width: 767px) {
+            margin-bottom: 0px;
+        }
     }
 
     .total {
@@ -199,9 +222,22 @@ $color: #bb7100;
       @include make-md-column(12);
       margin: 0;
       padding: 0 0 0 14px;
+         @media(min-width: 768px) and (max-width: 991px){
+            background-color: #fff;
+            min-width: 770px;
+        }
+        @media (max-width: 767px) {
+            background-color: #fff;
+            padding-left: 6px;
+        }
       h2 {
         font-size: 1.75em;
         font-weight: 700;
+        @media (max-width: 767px) {
+            font-size: 1.02em;
+            margin: 2% 0;
+          line-height: 40px;
+        }
         span {
           float: right;
           height: 40px;
@@ -212,6 +248,10 @@ $color: #bb7100;
           line-height: .75em;
           font-weight: 700;
           text-align: right;
+           @media (max-width: 767px) {
+            font-size: 1.5em;
+            line-height: 1.0em;
+           }
           i{
               font-style: normal;
           }
@@ -221,15 +261,5 @@ $color: #bb7100;
   }
 }
 
-.cruiseFooter{
-    @media(min-width: 1200px) {
-              width: 100%;
-            }
-            @media(min-width: 992px) and (max-width: 1199px) {
-              padding: 10px 23px 20px 12px;
-              width: 60%;
-                float: left;
-            }
-}
 
 
